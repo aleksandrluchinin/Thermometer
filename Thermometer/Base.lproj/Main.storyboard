@@ -38,6 +38,7 @@
                                             <color key="titleColor" systemColor="systemPinkColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGv-Jp-k8V"/>
                                             <segue destination="W7t-jL-u4H" kind="show" id="rRn-wR-1iY"/>
                                         </connections>
                                     </button>
@@ -100,6 +101,11 @@
                             <constraint firstItem="LXt-of-Mud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qVi-jO-O1d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Abv-Q1-umA" id="vEj-jA-UKB"/>
+                        <outlet property="loginTextField" destination="Mb3-KJ-2re" id="U4a-cN-8sV"/>
+                        <outlet property="passwordTextField" destination="4zF-UU-Voc" id="72Z-Qw-2xd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,6 +12,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    let fromLoginToTabBarSegue = "fromLoginToTabBar"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +58,7 @@ final class LoginViewController: UIViewController {
             let password = passwordInput.text!
             
             if login == "admin" && password == "1234" {
+                performSegue(withIdentifier: fromLoginToTabBarSegue, sender: nil)
                 return true
             } else {
                 // Создаю Алерт контроллер
